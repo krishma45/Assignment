@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable with Rowspan and Colspan</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        th, td {
+            border: 2px solid #333;
+            padding: 10px;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        td.break {
+            background-color: #FFD700;
+            font-weight: bold;
+        }
+        td.subject {
+            background-color: #90EE90;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">College Timetable</h1>
+
+    <table>
+        <!-- Heading Row -->
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+
+        <!-- 9:00 - 10:00 -->
+        <tr>
+            <td>9:00 - 10:00</td>
+            <td class="subject">Math</td>
+            <td class="subject">Physics</td>
+            <td class="subject" rowspan="2">Computer Science</td>
+            <td class="subject">Chemistry</td>
+            <td class="subject">English</td>
+        </tr>
+
+        <!-- 10:00 - 11:00 -->
+        <tr>
+            <td>10:00 - 11:00</td>
+            <td class="subject">English</td>
+            <td class="subject">Math</td>
+            <!-- CS spans 2 rows on Wednesday -->
+            <td class="subject">Physics</td>
+            <td class="subject">Chemistry</td>
+        </tr>
+
+        <!-- 11:00 - 12:00 -->
+        <tr>
+            <td>11:00 - 12:00</td>
+            <td class="subject" colspan="2">Group Project</td>
+            <td class="subject">Math</td>
+            <td class="subject">Computer Science</td>
+            <td class="subject">Sports</td>
+        </tr>
+
+        <!-- 12:00 - 1:00 -->
+        <tr>
+            <td>12:00 - 1:00</td>
+            <td class="break" colspan="5">Lunch Break</td>
+        </tr>
+
+        <!-- 1:00 - 2:00 -->
+        <tr>
+            <td>1:00 - 2:00</td>
+            <td class="subject">Physics</td>
+            <td class="subject">Chemistry</td>
+            <td class="subject">English</td>
+            <td class="subject">Math</td>
+            <td class="subject">Computer Science</td>
+        </tr>
+    </table>
+</body>
+</html>
