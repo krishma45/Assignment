@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback Form</title>
+
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(to bottom right, #dfe9f3, #ffffff);
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 38px;
+        color: #3949ab;
+        margin-bottom: 20px;
+        text-shadow: 0 0 3px #c5cae9;
+    }
+
+    .container {
+        width: 450px;
+        margin: auto;
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        border: 2px solid #9fa8da;
+        box-shadow: 0 8px 20px rgba(63, 81, 181, 0.2);
+    }
+
+    label {
+        font-weight: bold;
+        font-size: 16px;
+        color: #283593;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 6px;
+        margin-bottom: 15px;
+        border: 1px solid #7986cb;
+        border-radius: 8px;
+        font-size: 15px;
+        background: #e8eaf6;
+    }
+
+    textarea {
+        height: 100px;
+        resize: none;
+    }
+
+    .rating {
+        margin-bottom: 15px;
+        color: #1a237e;
+    }
+
+    .rating label {
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 17px;
+        border: none;
+        border-radius: 10px;
+        background: #5c6bc0;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background: #6c7cd4;
+        transform: scale(1.02);
+    }
+</style>
+
+</head>
+<body>
+
+<h1>Feedback Form</h1>
+
+<div class="container">
+    <form>
+        <label>Name:</label><br>
+        <input type="text" required><br>
+
+        <label>Email:</label><br>
+        <input type="email" required><br>
+
+        <label>Rating (1 – 5):</label><br>
+        <div class="rating">
+            <label><input type="radio" name="rate" required> 1</label>
+            <label><input type="radio" name="rate"> 2</label>
+            <label><input type="radio" name="rate"> 3</label>
+            <label><input type="radio" name="rate"> 4</label>
+            <label><input type="radio" name="rate"> 5</label>
+        </div>
+
+        <label>Your Feedback:</label><br>
+        <textarea required></textarea><br>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+</div>
+
+</body>
+</html>
+
+
+

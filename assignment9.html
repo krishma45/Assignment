@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio </title>
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e8f5e9;
+            padding: 20px;
+        }
+
+      
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            background: linear-gradient(to right, #0b8852db,#44e8a1db);
+            -webkit-background-clip: text;
+            -webkit-animation-fill-mode: backwards;
+            margin-bottom: 30px;
+        }
+
+        
+        audio {
+            display: block;
+            margin: 0 auto;
+            width: 60%;
+            border: 3px solid rgb(27, 94, 65);
+            padding: 10px;
+            border-radius: 10px;
+            background: #c8e9c9;
+        }
+
+       
+        p {
+            width: 80%;
+            margin: 25px auto;
+            font-size: 18px;
+            line-height: 1.6;
+            color:#095232db;
+            text-align: justify;
+        }
+    </style>
+<body>
+
+    <h1>Listen to the song "Living Hell"</h1>
+
+   
+    <audio src="C:\Users\haris\OneDrive\Desktop\vidya\song.mp3" autoplay loop controls>
+        Your browser does not support the audio element.
+    </audio>
+
+    <p>
+        Autoplay allows the audio to start playing automatically as soon as the webpage loads. 
+        However, modern browsers sometimes block autoplay unless the audio is muted or the user 
+        has previously interacted with the site. This is done to prevent unwanted sounds from 
+        playing without the user's permission. When autoplay is enabled, the audio begins on its 
+        own and continues seamlessly if the loop attribute is also used.
+    </p>
+
+</body>
+</html>
